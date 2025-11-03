@@ -14,10 +14,34 @@
                VerticalContentAlignment="Top"
                HorizontalAlignment="Center"
                VerticalAlignment="Top"/>
+
+        <Label Content="Owned"
+               Width="Auto" Height="Auto" Margin="0,0,0,40"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+
+        <Label Content="{Binding CurrentPlayer.NumberOfAutoClickers}"
+               Width="30" Height="Auto" Margin="10,0,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+
         <Button Content="Add points!" Click="Button_AddClick"
-                Width="80" Height="25" Margin="0,0,0,10"
+                Width="Auto" Height="25" Margin="0,0,0,10"
                 Background="Aquamarine"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"/>
+
+        <Button Content="Buy auto clicker!" Click="Button_BuyAutoClicker"
+                Width="Auto" Height="25" Margin="50,0,0,0"
+                Background="Aquamarine"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                ToolTip="Costs 10 points!"/>
+
+        <Button Content="Placeholder!"
+                Width="Auto" Height="25" Margin="50,55,0,0"
+                Background="Aquamarine"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"/>
     </Grid>
 </Window>
