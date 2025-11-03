@@ -28,6 +28,9 @@ namespace Clicker
             DataContext = _gameSession;
         }
 
-
+        private void Button_AddClick(object sender, RoutedEventArgs e)
+        {
+            _gameSession.CurrentPlayer.CurrentPoints += 1;
+        }
     }
 }
